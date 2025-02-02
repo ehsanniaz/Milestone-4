@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Editable  Resume Builder </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Editable Resume Buider </h1>
+    <form id="Resume-form">
+        <fieldset>
+            <legend> Personal Information </legend>
+            <label for="name"><b>Name : </b></label>
+            <input type="text" id="name" placeholder="Enter Your Name" required>
+            <label for="Father-name"><b> Father Name : </b></label>
+            <input type="text" id="Father-name" placeholder="Enter Your Father Name" required>
+            <label for="Email"><b> Email : </b></label>
+            <input type="text" id="Email" placeholder="Enter Your Email" required>
+            <label for="Phone"><b> Phone : </b></label>
+            <input type="text" id="Phone" placeholder="Enter Your Phone Number" required>
+        </fieldset>
+
+        <fieldset>
+            <legend><b> Qualifications : </b></legend>
+            <label for="Education"><b> Education :  </b></label>
+            <textarea id="Education" placeholder="Enter your Education" rows="4" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend><b> Work Experience : </b></legend>
+            <label for="experience"><b> Work Experience :  </b></label>
+            <textarea id="experience" placeholder="Enter your Work Experience" rows="4" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend><b> Skills : </b></legend>
+            <label for="skills"> Skills : </label>
+            <textarea id="skills" placeholder="Enter your Skills " rows="4" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend><b> Certifications :  </b></legend>
+            <label for="certifications"> Certifications :</label>
+            <textarea id="certifications" placeholder="Enter your Certifications " rows="4" required></textarea>
+        </fieldset>
+
+        <button type="submit"><b> Generate Resume </b></button>
+
+    </form>
+
+    <br>
+    <!-- dynamic & Editable Resume Builder  resume display -->
+     <div id="resume-display" contenteditable="true">
+        <!-- reusnw willbe  generated below -->
+     </div>
+
+     <script src="scripts.js"></script>
+    
+</body>
+</html>
